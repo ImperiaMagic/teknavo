@@ -190,22 +190,5 @@ var TableBuilder = (function () {
         this.dimension = newValue;
         this.leftTopElement.innerText = newValue + "/" + newValue;
     };
-
-    // increase matrix dimension
-    TableBuilder.prototype.increaseDimension = function (newValue) {
-        for (var i = 0; i < newValue; i++) {
-            var colStart = this.editor.matrix.dimension;
-            if (i >= this.editor.matrix.dimension) {
-                this.editor.matrix.elements.push([]);
-                colStart = 0;
-            }
-            for (var j = colStart; j < newValue; j++) {
-                this.editor.matrix.elements[i].push("0.0000");
-            }
-        }
-        this.editor.matrix.dimension = newValue;
-        this.dimension = newValue;
-        this.leftTopElement.innerText = newValue + "/" + newValue;
-    };
     return TableBuilder;
 })();

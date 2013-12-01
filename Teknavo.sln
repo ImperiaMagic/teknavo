@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teknavo", "Teknavo\Teknavo.csproj", "{B88F2CF3-1168-4829-A61F-64785FAAEFA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B88F2CF3-1168-4829-A61F-64785FAAEFA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B88F2CF3-1168-4829-A61F-64785FAAEFA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B88F2CF3-1168-4829-A61F-64785FAAEFA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B88F2CF3-1168-4829-A61F-64785FAAEFA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

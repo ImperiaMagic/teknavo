@@ -1,0 +1,41 @@
+.mainContainer {
+	margin:0 0 0 0;
+	width:100%;
+}
+
+input[type="file"] {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+table {
+	margin: 2px;
+}
+
+th {
+	text-align: center;
+}
+
+#loadedData {
+	width:70%;
+}
+
+td {
+	transition-property:width;
+	transition-duration:2s;
+	transition-timing-function:linear;
+	transition-delay:2s;
+}
+
+button {
+    width: 123px;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.close {
+    text-align: right;
+}

@@ -116,8 +116,24 @@ var MatrixEditor = (function () {
         if (newValue < this.matrix.dimension) {
             (this.tableBuilder).reduceDimension(newValue);
         } else {
-            (this.tableBuilder).increaseDimension(newValue);
+            this.increaseDimension(newValue);
+            this.init(this.matrix);
         }
+    };
+
+    // increase matrix dimension
+    MatrixEditor.prototype.increaseDimension = function (newValue) {
+        for (var i = 0; i < newValue; i++) {
+            var colStart = this.matrix.dimension;
+            if (i >= this.matrix.dimension) {
+                this.matrix.elements.push([]);
+                colStart = 0;
+            }
+            for (var j = colStart; j < newValue; j++) {
+                this.matrix.elements[i].push(0);
+            }
+        }
+        this.matrix.dimension = newValue;
     };
 
     MatrixEditor.prototype.loadMatrixFromSite = function (matrix) {
